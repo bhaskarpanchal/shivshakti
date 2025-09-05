@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="style.css">
+
+
+
+
+    </head>
+
+    <body class="p-0">
+
+        <!--======== Header section start ========-->
+
+        <header id="mainHeader">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <!-- Logo -->
+                        <a class="d-flex logo_container align-items-center navbar-brand me-auto" href="#">
+                            <img class="logo" src="logo.png" alt=""> ShivShakti
+                        </a>
+
+                        <!-- Sidebar Toggle -->
+                        <button class="navbar-toggler" type="button" id="menuToggle">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Desktop Nav -->
+                        <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
+                            <ul class="navbar-nav mb-2 gap-4 mb-lg-0">
+                                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Right Button -->
+                        <a href="contactus.html" class="btn header_btn d-none d-lg-block">Get in Touch</a>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Sidebar Nav for Mobile -->
+
+            <div id="sidebarMenu" class="sidebar">
+                <button id="closeMenu" class="close-btn"><span>
+                        <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffffff">
+                            <path
+                                d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </svg>
+                    </span></button>
+                <ul class="sidebar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+                <button class="btn header_btn w-100 mt-4">Get in Touch</button>
+            </div>
+
+            <!-- Overlay -->
+            <div id="overlay" class="overlay"></div>
+        </header>
+
+        <!--======== Header section end ========-->
+
+        <!--======== Hero section start ========-->
+
+        <main class="hero_section">
+            <div class="container ">
+                <video autoplay muted loop playsinline preload="auto" class="hero-video">
+  <source src="hero2.mp4" type="video/mp4">
+</video>
+
+                <div class="hero_content ">
+                    <span class="welcome_text">Welcome to ShivShakti</span>
+                    <h1 class="highlight_txt">Powering Sustainable <span class="highlight_txt">Wind Solutions</span>
+                    </h1>
+                    <p>At Shiv Shakti Wind Tech, we partner with global customers to deliver efficiency, sustainability,
+                        and long-term value. With expert guidance from consultation to execution, we turn challenges
+                        into opportunities and progress into reality</p>
+                </div>
+            </div>
+        </main>
+
+        <!--======== Hero section end ========-->
+
+        <!--======== section 2 section start ========-->
+        <!-- <section class="scetion-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2">
+                        <div class="icon-side">
+                            <img src="icon1.png" alt="Icon 1">
+                        </div>
+                        <div class="mini-card-content">
+                            <h3>Card Title 1</h3>
+                            <p>Card description goes here. This is a brief overview of the content.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section> -->
+
+        <!--======== service area section start ========-->
+
+        <section class="services_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tp-service-5-item d-flex  ">
+                            <div class="tp-service-5-item-icon  ">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36"
+                                        fill="none">
+                                        <path
+                                            d="M13.5 18.0005C15.28 18.0005 17.0201 17.4727 18.5001 16.4837C19.9802 15.4948 21.1337 14.0892 21.8149 12.4446C22.4961 10.8001 22.6743 8.99051 22.3271 7.24468C21.9798 5.49885 21.1226 3.8952 19.864 2.63653C18.6053 1.37786 17.0016 0.520692 15.2558 0.173425C13.51 -0.173842 11.7004 0.00438786 10.0558 0.685576C8.41131 1.36677 7.0057 2.52032 6.01677 4.00036C5.02784 5.4804 4.5 7.22046 4.5 9.00049C4.50238 11.3867 5.45136 13.6745 7.13867 15.3618C8.82598 17.0491 11.1138 17.9981 13.5 18.0005ZM13.5 3.00049C14.6867 3.00049 15.8467 3.35239 16.8334 4.01167C17.8201 4.67096 18.5891 5.60804 19.0433 6.70439C19.4974 7.80075 19.6162 9.00715 19.3847 10.171C19.1532 11.3349 18.5818 12.404 17.7426 13.2431C16.9035 14.0822 15.8344 14.6537 14.6705 14.8852C13.5067 15.1167 12.3003 14.9979 11.2039 14.5438C10.1075 14.0896 9.17047 13.3206 8.51118 12.3339C7.85189 11.3472 7.5 10.1872 7.5 9.00049C7.5 7.40919 8.13214 5.88307 9.25736 4.75785C10.3826 3.63263 11.9087 3.00049 13.5 3.00049ZM27 34.5005C27 34.8983 26.842 35.2798 26.5607 35.5611C26.2794 35.8425 25.8978 36.0005 25.5 36.0005C25.1022 36.0005 24.7206 35.8425 24.4393 35.5611C24.158 35.2798 24 34.8983 24 34.5005C24 31.7157 22.8937 29.045 20.9246 27.0759C18.9555 25.1067 16.2848 24.0005 13.5 24.0005C10.7152 24.0005 8.04451 25.1067 6.07538 27.0759C4.10625 29.045 3 31.7157 3 34.5005C3 34.8983 2.84196 35.2798 2.56066 35.5611C2.27936 35.8425 1.89782 36.0005 1.5 36.0005C1.10218 36.0005 0.720644 35.8425 0.43934 35.5611C0.158035 35.2798 0 34.8983 0 34.5005C0 30.9201 1.42232 27.4863 3.95406 24.9545C6.4858 22.4228 9.91958 21.0005 13.5 21.0005C17.0804 21.0005 20.5142 22.4228 23.0459 24.9545C25.5777 27.4863 27 30.9201 27 34.5005ZM35.5605 21.44C35.7038 21.5784 35.818 21.7439 35.8966 21.9269C35.9753 22.1099 36.0166 22.3067 36.0184 22.5059C36.0201 22.7051 35.9821 22.9026 35.9067 23.0869C35.8313 23.2713 35.7199 23.4387 35.5791 23.5796C35.4382 23.7204 35.2708 23.8318 35.0864 23.9072C34.9021 23.9826 34.7046 24.0206 34.5054 24.0189C34.3062 24.0171 34.1094 23.9758 33.9264 23.8971C33.7434 23.8185 33.5779 23.7043 33.4395 23.561L30.75 20.8715L28.0605 23.561C27.7776 23.8342 27.3987 23.9854 27.0054 23.982C26.6121 23.9786 26.2359 23.8208 25.9578 23.5427C25.6797 23.2646 25.5219 22.8884 25.5185 22.4951C25.5151 22.1018 25.6663 21.7229 25.9395 21.44L28.629 18.7505L25.9395 16.061C25.6663 15.7781 25.5151 15.3992 25.5185 15.0059C25.5219 14.6126 25.6797 14.2364 25.9578 13.9583C26.2359 13.6802 26.6121 13.5224 27.0054 13.519C27.3987 13.5156 27.7776 13.6668 28.0605 13.94L30.75 16.6295L33.4395 13.94C33.7224 13.6668 34.1013 13.5156 34.4946 13.519C34.8879 13.5224 35.2641 13.6802 35.5422 13.9583C35.8203 14.2364 35.9781 14.6126 35.9815 15.0059C35.9849 15.3992 35.8337 15.7781 35.5605 16.061L32.871 18.7505L35.5605 21.44Z"
+                                            fill="currentColor"></path>
+                                    </svg></span>
+                            </div>
+                            <div class="tp-service-5-item-content">
+                                <h4 class="tp-service-5-item-title">Certified
+                                    engineers</h4>
+                                <p class="m-0">Fully committed to the main <br>
+                                    success company solar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tp-service-5-item d-flex">
+                            <div class="tp-service-5-item-icon ">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="36" viewBox="0 0 32 36"
+                                        fill="none">
+                                        <path
+                                            d="M28.5817 19.0502L26.8868 18.0003L28.5832 16.9503C29.7612 16.2499 30.6733 15.1784 31.1767 13.9038C31.4918 13.0611 31.6093 12.1572 31.52 11.2619C31.4307 10.3666 31.1371 9.50369 30.6618 8.73972C30.1865 7.97576 29.5422 7.33109 28.7785 6.8554C28.0148 6.3797 27.152 6.08566 26.2568 5.99594C24.8908 5.88421 23.5264 6.22926 22.3778 6.97693L21.7763 7.35042V6.25844C21.8017 4.73559 21.2633 3.25712 20.2645 2.10722C19.2658 0.957323 17.8773 0.217165 16.3659 0.0290296C15.5323 -0.0532721 14.6907 0.0398967 13.8952 0.302538C13.0998 0.56518 12.3682 0.991474 11.7475 1.55398C11.1267 2.11648 10.6307 2.80273 10.2912 3.56854C9.95177 4.33436 9.77644 5.16277 9.77651 6.00044V7.35042L9.17652 6.97543C8.02814 6.22565 6.66306 5.87897 5.29608 5.98994C4.40065 6.07888 3.53761 6.37224 2.77347 6.84741C2.00934 7.32259 1.36452 7.96689 0.888734 8.73064C0.412945 9.4944 0.118892 10.3572 0.0292415 11.2526C-0.060409 12.1479 0.056738 13.0519 0.371652 13.8948C0.875101 15.1698 1.7879 16.2415 2.96661 16.9413L4.66609 18.0003L2.96961 19.0502C1.79168 19.7506 0.87951 20.8221 0.376152 22.0967C0.0606217 22.9401 -0.0568659 23.8448 0.0327594 24.7408C0.122385 25.6369 0.416725 26.5003 0.893058 27.2645C1.36939 28.0288 2.01497 28.6733 2.77996 29.1484C3.54496 29.6235 4.40889 29.9164 5.30508 30.0046C6.66802 30.116 8.02945 29.7726 9.17652 29.0281L9.77651 28.6501V30.0001C9.77651 31.5914 10.4086 33.1175 11.5338 34.2427C12.659 35.3679 14.1851 36 15.7764 36C17.3677 36 18.8938 35.3679 20.019 34.2427C21.1442 33.1175 21.7763 31.5914 21.7763 30.0001V28.6501L22.3763 29.0266C23.5227 29.7716 24.8835 30.116 26.2463 30.0061C27.1422 29.9175 28.0058 29.6243 28.7704 29.149C29.535 28.6737 30.1802 28.0291 30.6562 27.265C31.1323 26.5008 31.4263 25.6375 31.5158 24.7417C31.6052 23.8458 31.4877 22.9414 31.1722 22.0982C30.6697 20.8236 29.7586 19.7517 28.5817 19.0502ZM28.1152 25.6772C27.7122 26.3239 27.0687 26.7841 26.3264 26.9566C25.5841 27.129 24.8037 26.9995 24.1568 26.5966L21.0683 24.6737C20.841 24.5323 20.58 24.4544 20.3124 24.448C20.0448 24.4415 19.7804 24.5068 19.5465 24.6371C19.3127 24.7673 19.1179 24.9578 18.9825 25.1887C18.8471 25.4195 18.7759 25.6825 18.7764 25.9501V30.0001C18.7764 30.7957 18.4603 31.5588 17.8977 32.1214C17.3351 32.684 16.5721 33 15.7764 33C14.9808 33 14.2177 32.684 13.6551 32.1214C13.0925 31.5588 12.7765 30.7957 12.7765 30.0001V25.9501C12.7764 25.6827 12.7048 25.4202 12.5692 25.1897C12.4336 24.9592 12.2388 24.7692 12.005 24.6393C11.7713 24.5095 11.507 24.4444 11.2397 24.451C10.9723 24.4576 10.7116 24.5355 10.4845 24.6767L7.39605 26.6026C7.07576 26.8021 6.71932 26.9365 6.34709 26.9982C5.97486 27.0599 5.59412 27.0476 5.22661 26.9622C4.85911 26.8767 4.51203 26.7197 4.2052 26.5001C3.89837 26.2806 3.6378 26.0027 3.43836 25.6824C3.23891 25.3621 3.10451 25.0057 3.04282 24.6334C2.98113 24.2612 2.99336 23.8805 3.07881 23.513C3.16426 23.1455 3.32126 22.7984 3.54085 22.4916C3.76043 22.1847 4.0383 21.9242 4.35859 21.7247L8.29603 19.2737C8.5131 19.1392 8.69222 18.9515 8.81644 18.7284C8.94065 18.5053 9.00585 18.2541 9.00585 17.9988C9.00585 17.7434 8.94065 17.4923 8.81644 17.2691C8.69222 17.046 8.5131 16.8583 8.29603 16.7238L4.35859 14.2743C3.71174 13.8715 3.25139 13.2283 3.07881 12.4861C2.90623 11.7438 3.03556 10.9635 3.43836 10.3166C3.84115 9.66978 4.4844 9.20942 5.22661 9.03685C5.96883 8.86427 6.74919 8.9936 7.39605 9.39639L10.4845 11.3194C10.7113 11.4604 10.9716 11.5383 11.2386 11.545C11.5055 11.5518 11.7694 11.4871 12.0031 11.3578C12.2367 11.2284 12.4315 11.0391 12.5675 10.8092C12.7035 10.5794 12.7756 10.3174 12.7765 10.0504V6.16094C12.7603 5.43067 13.0014 4.71798 13.4577 4.14759C13.914 3.57721 14.5564 3.18549 15.2724 3.04099C15.703 2.9676 16.1444 2.98913 16.5658 3.10407C16.9872 3.21901 17.3785 3.42459 17.7122 3.70643C18.0459 3.98827 18.314 4.33959 18.4978 4.73582C18.6816 5.13205 18.7767 5.56365 18.7764 6.00044V10.0504C18.7767 10.3177 18.8485 10.58 18.9842 10.8103C19.12 11.0405 19.3148 11.2304 19.5485 11.3601C19.7822 11.4898 20.0463 11.5547 20.3135 11.548C20.5808 11.5414 20.8413 11.4635 21.0683 11.3224L24.1568 9.40089C24.4771 9.20145 24.8335 9.06705 25.2058 9.00535C25.578 8.94366 25.9587 8.95589 26.3262 9.04135C26.6937 9.1268 27.0408 9.2838 27.3476 9.50338C27.6545 9.72297 27.915 10.0008 28.1145 10.3211C28.3139 10.6414 28.4483 10.9979 28.51 11.3701C28.5717 11.7423 28.5595 12.1231 28.474 12.4906C28.3886 12.8581 28.2316 13.2051 28.012 13.512C27.7924 13.8188 27.5145 14.0794 27.1943 14.2788L23.2568 16.7298C23.0398 16.8643 22.8606 17.052 22.7364 17.2751C22.6122 17.4983 22.547 17.7494 22.547 18.0048C22.547 18.2601 22.6122 18.5113 22.7364 18.7344C22.8606 18.9575 23.0398 19.1452 23.2568 19.2797L27.1943 21.7307C27.5147 21.9299 27.7928 22.1903 28.0126 22.497C28.2323 22.8037 28.3895 23.1508 28.475 23.5183C28.5605 23.8858 28.5728 24.2665 28.5111 24.6388C28.4493 25.011 28.3148 25.3674 28.1152 25.6877V25.6772Z"
+                                            fill="currentColor"></path>
+                                    </svg></span>
+                            </div>
+                            <div class="tp-service-5-item-content">
+                                <h4 class="tp-service-5-item-title">Solar system
+                                    design</h4>
+                                <p class="m-0">Fully committed to the main <br>
+                                    success company solar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tp-service-5-item d-flex">
+                            <div class="tp-service-5-item-icon ">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                        fill="none">
+                                        <path
+                                            d="M34.6841 1.30886C34.215 0.840895 33.648 0.482811 33.0238 0.260405C32.3997 0.0379985 31.734 -0.043191 31.0747 0.0226864C26.883 0.427897 12.7862 2.17331 7.34138 7.61214C4.73868 10.2219 3.19532 13.7036 3.00934 17.3846C2.82336 21.0657 4.00795 24.6852 6.33436 27.544L0.421287 33.4571C0.147908 33.7401 -0.00336267 34.1192 5.67334e-05 34.5127C0.00347614 34.9062 0.161312 35.2827 0.439568 35.5609C0.717825 35.8392 1.09424 35.997 1.48774 36.0004C1.88124 36.0038 2.26034 35.8526 2.54339 35.5792L8.45646 29.6661C11.3147 31.9956 14.9351 33.1827 18.6178 32.9978C22.3005 32.8129 25.7838 31.2692 28.3943 28.6651C33.9112 23.1467 35.5981 9.09341 35.9868 4.91824C36.0503 4.2577 35.9664 3.59129 35.7411 2.96712C35.5159 2.34294 35.1548 1.77656 34.6841 1.30886ZM26.2797 26.537C24.2334 28.5758 21.5151 29.8002 18.6322 29.9816C15.7493 30.1631 12.8989 29.2892 10.6131 27.523L25.0686 13.0675C25.342 12.7844 25.4932 12.4053 25.4898 12.0118C25.4864 11.6183 25.3286 11.2419 25.0503 10.9637C24.7721 10.6854 24.3956 10.5276 24.0021 10.5241C23.6086 10.5207 23.2295 10.672 22.9465 10.9454L8.48347 25.4009C6.71702 23.1152 5.8429 20.2648 6.02435 17.3818C6.20579 14.4988 7.4304 11.7804 9.46949 9.73424C13.2349 5.97028 23.6173 3.75213 31.3644 3.00924C31.5838 2.98789 31.8052 3.01514 32.0129 3.08905C32.2206 3.16296 32.4094 3.28172 32.566 3.43689C32.7226 3.59205 32.8431 3.77981 32.9189 3.98682C32.9948 4.19382 33.0241 4.41499 33.0047 4.63459C32.2543 12.7193 30.0917 22.7175 26.2722 26.537H26.2797Z"
+                                            fill="currentColor"></path>
+                                    </svg></span>
+                            </div>
+                            <div class="tp-service-5-item-content">
+                                <h4 class="tp-service-5-item-title">Solar eco-power
+                                </h4>
+                                <p class="mb-0">Fully committed to the main <br>
+                                    success company solar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--======== service area section end ========-->
+
+        <!--======== Who we are section start ========-->
+
+        <section class="Who_we_are_section fix p-relative ">
+
+            <div class="container">
+                <div class="grid_col_2">
+
+                    <div class="img_side">
+                        <img src="img1.png" alt="Who We Are" class="img-fluid">
+                    </div>
+                    <div class="content_side">
+                        <div>
+                            <span class="section_pre_title">WE ARE BEST SOLAR COMPANY</span>
+                            <h4 class="section_title">Solar leaders your <br> ideal partner</h4>
+                            <p class="mb-30">Whether it's on a website, an app, or a search engine, this simple <br>
+                                phrase can
+                                evoke a mix of emotions from confusion to exasper <br> But fear not, for in these
+                                moments, there are
+                            </p>
+                            <ul class="content_list p-0">
+                                <li><span>
+                                        <?xml version="1.0" encoding="UTF-8"?><svg width="16px" height="16px"
+                                            stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" color="#fff">
+                                            <path d="M5 13L9 17L19 7" stroke="#fff" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span> We provide innovative solar solutions</li>
+                                <li><span>
+                                        <?xml version="1.0" encoding="UTF-8"?><svg width="16px" height="16px"
+                                            stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" color="#fff">
+                                            <path d="M5 13L9 17L19 7" stroke="#fff" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span> We provide innovative solar solutions</li>
+                                <li><span>
+                                        <?xml version="1.0" encoding="UTF-8"?><svg width="16px" height="16px"
+                                            stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" color="#fff">
+                                            <path d="M5 13L9 17L19 7" stroke="#fff" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span> We provide innovative solar solutions</li>
+                            </ul>
+                            <a href="#" class="btn2 py-4">Know About More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--======== Who we are section end ========-->
+
+        <!--======== cta area section start ========-->
+
+        <div class="cta_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <div class="tp-cta-wrapper d-flex align-items-center justify-content-center gap-4">
+                            <img src="data:image/webp;base64,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"
+                                alt="">
+                            <p>Discover independence through the power of solar. <a href="contact.html">Contact us
+                                    now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--======== cta area section end ========-->
+
+        <!--======== type of services section start ========-->
+
+        <section class="type_of_services_section pt-130 pb-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <h3 class="section_title">Shiv Shakti excellent service</h3>
+                        </div>
+                    </div>
+                    <div class="services_mini_card_container row">
+                        <div class="services_mini_card col-xl-3 col-lg-4 col-md-6 ">
+                            <div class="tp-service-4-item text-center">
+                                <div class="tp-service-4-item-icon">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"
+                                            viewBox="0 0 80 80" fill="none">
+                                            <path
+                                                d="M62.6633 6.66667C56.7723 6.66667 51.9967 11.4423 51.9967 17.3333C52.0033 23.2217 56.775 27.9933 62.6633 28C68.5543 28 73.33 23.2243 73.33 17.3333C73.33 11.4423 68.5543 6.66667 62.6633 6.66667ZM62.6633 25.3333C58.245 25.3333 54.6633 21.7517 54.6633 17.3333C54.6677 12.9168 58.2468 9.33767 62.6633 9.33333C67.0817 9.33333 70.6633 12.915 70.6633 17.3333C70.6633 21.7517 67.0817 25.3333 62.6633 25.3333Z"
+                                                fill="#3A954F"></path>
+                                            <path d="M63.9967 0H61.33V4H63.9967V0Z" fill="#3A954F"></path>
+                                            <path d="M63.9967 30.6667H61.33V34.6667H63.9967V30.6667Z" fill="#3A954F">
+                                            </path>
+                                            <path d="M49.33 16H45.33V18.6667H49.33V16Z" fill="#3A954F"></path>
+                                            <path d="M79.9967 16H75.9967V18.6667H79.9967V16Z" fill="#3A954F"></path>
+                                            <path
+                                                d="M51.3484 4.1343L49.4628 6.0199L52.2912 8.8483L54.1768 6.9627L51.3484 4.1343Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M73.0326 25.8162L71.147 27.7018L73.9754 30.5302L75.861 28.6446L73.0326 25.8162Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M52.2915 25.815L49.4631 28.6434L51.3487 30.529L54.1771 27.7006L52.2915 25.815Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M73.9769 4.13397L71.1485 6.96237L73.0341 8.84797L75.8625 6.01957L73.9769 4.13397Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M71.834 78.028L39.834 19.3613C39.6003 18.933 39.1513 18.6665 38.6633 18.6667H1.32999C1.22983 18.6688 1.13016 18.6817 1.03266 18.7053C1.02199 18.7053 1.01133 18.7053 1.00066 18.7053C0.87066 18.7402 0.746993 18.795 0.633993 18.868C0.60066 18.89 0.568493 18.9142 0.537993 18.94C0.427993 19.0235 0.330827 19.1227 0.249993 19.2347C0.231327 19.2627 0.205993 19.2853 0.18866 19.3147C0.160327 19.3687 0.13616 19.4248 0.11666 19.4827C0.0991601 19.5173 0.0836601 19.553 0.0699935 19.5893C0.0274935 19.7185 0.00499346 19.8533 0.00332679 19.9893V29.3333C0.00316013 29.5548 0.0581601 29.773 0.163327 29.968L26.8233 79.3013C27.0565 79.732 27.507 80.0003 27.9967 80H70.6633C71.3997 80.0002 71.9968 79.4033 71.9968 78.6668C71.997 78.4437 71.941 78.224 71.834 78.028ZM60.4167 62.6667H51.4553L44.91 50.6667H53.8713L60.4167 62.6667ZM28.4167 48H18.122L11.5767 36H21.8713L28.4167 48ZM24.91 36H33.8713L40.4167 48H31.4553L24.91 36ZM29.8713 50.6667L36.4167 62.6667H26.122L19.5767 50.6667H29.8713ZM32.91 50.6667H41.8713L48.4167 62.6667H39.4553L32.91 50.6667ZM52.4167 48H43.4553L36.91 36H45.8713L52.4167 48ZM37.8713 21.3333L44.4167 33.3333H35.4553L28.91 21.3333H37.8713ZM25.8713 21.3333L32.4167 33.3333H23.4553L16.91 21.3333H25.8713ZM13.8713 21.3333L20.4167 33.3333H10.122L3.57666 21.3333H13.8713ZM28.7967 77.3333L2.66333 28.996V25.2293L31.0833 77.3333H28.7967ZM34.122 77.3333L27.5767 65.3333H37.8713L44.4167 77.3333H34.122ZM47.4553 77.3333L40.91 65.3333H49.8713L56.4167 77.3333H47.4553ZM59.4553 77.3333L52.91 65.3333H61.8713L68.4167 77.3333H59.4553Z"
+                                                fill="#3A954F"></path>
+                                        </svg></span>
+                                </div>
+                                <h4 class="card_title">Power sun assistance</h4>
+                                <p>Since 1985 Reed has pioneered spe <br>
+                                    cialist recruitment, sourcing</p>
+                            </div>
+                        </div>
+                        <div class="services_mini_card col-xl-3 col-lg-4 col-md-6">
+                            <div class="tp-service-4-item text-center">
+                                <div class="tp-service-4-item-icon ">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="74" height="80"
+                                            viewBox="0 0 74 80" fill="none">
+                                            <path
+                                                d="M60.421 42.1769L46.7896 30.9551C46.5603 30.7664 46.2744 30.6676 45.9741 30.6704L42.9902 30.7204C42.7768 30.0032 42.4388 29.3392 41.9999 28.7547V1.25044C41.9999 0.435444 41.2327 -0.159084 40.4468 0.0377896C36.9263 0.917784 34.2662 3.79917 33.6696 7.37853L30.767 24.7947C30.7181 25.0876 30.7753 25.3886 30.9281 25.6433L32.4654 28.2059C31.9601 28.7392 31.547 29.3601 31.2532 30.0448L7.43697 43.7953C6.73229 44.2022 6.59916 45.1632 7.16338 45.7467C9.69899 48.3689 13.5282 49.2117 16.9093 47.9452L31.4445 42.4997L28.3556 77.5H22.0002C21.3099 77.5 20.7502 78.0597 20.7502 78.75C20.7502 79.4403 21.3099 80 22.0002 80H52C52.6903 80 53.25 79.4403 53.25 78.75C53.25 78.0597 52.6903 77.5 52 77.5H45.6446L42.4611 41.4265L61.5632 52.455C62.2654 52.8608 63.1662 52.4992 63.3899 51.7162C64.3879 48.228 63.2226 44.4835 60.421 42.1769ZM37.0001 36.2502C34.9324 36.2502 33.2501 34.5679 33.2501 32.5003C33.2501 30.4326 34.9324 28.7503 37.0001 28.7503C39.0677 28.7503 40.7501 30.4326 40.7501 32.5003C40.7501 34.5679 39.0677 36.2502 37.0001 36.2502ZM36.1357 7.78977C36.4754 5.75135 37.7377 4.02464 39.5001 3.06746V26.7737C37.9549 26.0965 36.146 26.0578 34.5171 26.7661L33.3088 24.7519L36.1357 7.78977ZM16.0321 45.6042C14.0968 46.3288 11.9705 46.0992 10.2605 45.0517L30.7901 33.199C30.9873 34.9631 31.9207 36.5077 33.2763 37.5166L32.1354 39.5715L16.0321 45.6042ZM43.1347 77.5H30.8653L34.0654 41.2397C34.1115 41.1654 34.3273 40.7735 35.5465 38.5779C36.3077 38.7599 37.0324 38.7896 37.7459 38.7043L39.8166 39.8999L43.1347 77.5ZM40.7079 37.5277C42.0672 36.5226 43.0052 34.9802 43.2075 33.2171L45.556 33.1777L58.8321 44.1071C60.4274 45.4205 61.2916 47.377 61.2396 49.3819L40.7079 37.5277Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M18.2503 9.37545C18.2503 6.9631 16.2877 5.00045 13.8753 5.00045H12.0003C11.31 5.00045 10.7503 5.56013 10.7503 6.25045C10.7503 6.94076 11.31 7.50045 12.0003 7.50045H13.8753C14.9092 7.50045 15.7503 8.34154 15.7503 9.37545C15.7503 10.4094 14.9092 11.2504 13.8753 11.2504H2.00031C1.31 11.2504 0.750313 11.8101 0.750313 12.5004C0.750313 13.1908 1.31 13.7504 2.00031 13.7504H13.8753C16.2877 13.7504 18.2503 11.7879 18.2503 9.37545Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M7.00025 17.5004C7.00025 18.1907 7.55994 18.7504 8.25025 18.7504H20.1253C21.1592 18.7504 22.0003 19.5914 22.0003 20.6254C22.0003 21.6593 21.1592 22.5004 20.1253 22.5004H18.2503C17.5599 22.5004 17.0003 23.06 17.0003 23.7504C17.0003 24.4407 17.5599 25.0004 18.2503 25.0004H20.1253C22.5376 25.0004 24.5003 23.0377 24.5003 20.6254C24.5003 18.213 22.5376 16.2504 20.1253 16.2504H8.25025C7.55978 16.2504 7.00025 16.8102 7.00025 17.5004Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M49.5 20.0004H61.375C63.7874 20.0004 65.75 18.0377 65.75 15.6254C65.75 13.213 63.7874 11.2504 61.375 11.2504H59.5C58.8097 11.2504 58.25 11.8101 58.25 12.5004C58.25 13.1907 58.8097 13.7504 59.5 13.7504H61.375C62.4089 13.7504 63.25 14.5915 63.25 15.6254C63.25 16.6593 62.4089 17.5004 61.375 17.5004H49.5C48.8097 17.5004 48.25 18.0601 48.25 18.7504C48.25 19.4407 48.8095 20.0004 49.5 20.0004Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M68.875 22.5003H67C66.3097 22.5003 65.75 23.06 65.75 23.7503C65.75 24.4406 66.3097 25.0003 67 25.0003H68.875C69.9089 25.0003 70.75 25.8414 70.75 26.8753C70.75 27.9092 69.9089 28.7503 68.875 28.7503H57C56.3097 28.7503 55.75 29.31 55.75 30.0003C55.75 30.6906 56.3097 31.2503 57 31.2503H68.875C71.2873 31.2503 73.25 29.2877 73.25 26.8753C73.25 24.463 71.2873 22.5003 68.875 22.5003Z"
+                                                fill="#3A954F"></path>
+                                        </svg></span>
+                                </div>
+                                <h4 class="card_title">Turbine service</h4>
+                                <p>Since 1985 Reed has pioneered spe <br>
+                                    cialist recruitment, sourcing</p>
+                            </div>
+                        </div>
+                        <div class="services_mini_card col-xl-3 col-lg-4 col-md-6">
+                            <div class="tp-service-4-item text-center">
+                                <div class="tp-service-4-item-icon ">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"
+                                            viewBox="0 0 80 80" fill="none">
+                                            <path
+                                                d="M12.4704 31.2881C13.8714 32.5454 14.6702 34.3402 14.6663 36.2227V39.9999C14.6697 40.9612 15.1917 41.8457 16.0316 42.3132C16.0236 42.4318 15.9995 42.5452 15.9995 42.6665C16.0086 45.0909 17.6518 47.2042 19.9995 47.8104V71.9993C19.9995 74.9447 22.3872 77.3325 25.3326 77.3325H41.3323C41.3323 78.8053 42.5262 79.9992 43.999 79.9992H62.6653C64.1381 79.9992 65.332 78.8053 65.332 77.3325V75.9992C65.3229 73.5748 63.6795 71.4615 61.3321 70.8553V66.666H77.3318C78.1689 66.6665 78.9577 66.2738 79.4619 65.6055C79.9661 64.9373 80.1272 64.071 79.897 63.2661L72.6586 37.9333C72.3284 36.7902 71.2831 36.0024 70.0933 36H36.5713C35.3823 36.0039 34.3382 36.7913 34.0073 37.9333L26.7701 63.2661C26.5399 64.0704 26.7009 64.9363 27.2045 65.6045C27.7081 66.2726 28.496 66.6657 29.3327 66.666H45.3324V70.8553C43.4666 71.3431 42.0096 72.8001 41.5218 74.6658H25.3328C23.86 74.6658 22.6661 73.4719 22.6661 71.9992V47.8104C25.0137 47.2043 26.657 45.0911 26.666 42.6665C26.666 42.5451 26.642 42.4318 26.634 42.3132C27.4738 41.8455 27.9959 40.9612 27.9993 39.9999V36.2267C28.0302 34.2957 28.8693 32.4662 30.3125 31.1828C34.3317 27.5196 35.7234 21.7825 33.8295 16.6849C31.9355 11.5874 27.1354 8.15073 21.6994 8.00058C18.1001 7.90152 14.6139 9.26243 12.0335 11.7736C9.4531 14.2848 7.99844 17.733 7.99984 21.3336C8.00281 25.1374 9.62934 28.7589 12.4704 31.2881ZM54.6657 63.9995V55.9996H64.1869L65.4162 63.9995H54.6657ZM44.0124 46.6665H51.999V53.3331H43.0659L44.0124 46.6665ZM40.3672 53.333H32.3806L34.2859 46.6664H41.319L40.3672 53.333ZM54.6657 46.6665H62.7522L63.7763 53.3331H54.6658L54.6657 46.6665ZM74.2853 53.333H66.4748L65.4495 46.6664H72.3826L74.2853 53.333ZM68.1134 63.9995L66.884 55.9996H75.0479L77.3319 63.9995H68.1134ZM71.6172 43.9999H65.0387L64.2187 38.6667H70.0919L71.6172 43.9999ZM62.3414 43.9999H54.6657V38.6667H61.5215L62.3414 43.9999ZM51.999 38.6665V43.9997H44.3991L45.1605 38.6665H51.999ZM42.4618 38.6665L41.7004 43.9997H35.0473L36.5713 38.6665H42.4618ZM31.6194 55.9996H39.9859L38.8433 63.9995H29.3329L31.6194 55.9996ZM42.6792 55.9996H51.999V63.9995H41.5365L42.6792 55.9996ZM58.6656 66.6661V70.6661H47.9991V66.6661H58.6656ZM43.9991 75.9992C43.9991 74.5265 45.193 73.3326 46.6658 73.3326H59.9988C61.4716 73.3326 62.6655 74.5265 62.6655 75.9992V77.3325H43.9991V75.9992ZM25.3328 37.3333V39.9999H17.3329V37.3333H25.3328ZM21.3329 45.3331C19.8601 45.3331 18.6662 44.1392 18.6662 42.6665H23.9995C23.9995 44.1392 22.8056 45.3331 21.3329 45.3331ZM13.893 13.6911C15.8792 11.7446 18.5518 10.6583 21.3329 10.6671H21.6288C25.9751 10.7897 29.8119 13.5384 31.3264 17.6141C32.8409 21.69 31.7297 26.2771 28.518 29.208C26.9323 30.6431 25.8654 32.5621 25.4834 34.6665H17.1903C16.847 32.5938 15.8077 30.7 14.2436 29.2972C12.0326 27.33 10.739 24.5323 10.6726 21.5737C10.606 18.6151 11.7727 15.762 13.893 13.6975V13.6911Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M14.6664 22.6669C15.4028 22.6669 15.9997 22.07 15.9997 21.3336C15.9997 18.3882 18.3875 16.0004 21.3329 16.0004C22.0693 16.0004 22.6661 15.4034 22.6661 14.6672C22.6661 13.9308 22.0691 13.3339 21.3329 13.3339C16.9165 13.3383 13.3374 16.9174 13.333 21.3338C13.333 22.07 13.93 22.6669 14.6664 22.6669Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M21.3329 5.33401C22.0693 5.33401 22.6662 4.73698 22.6662 4.00073V1.33401C22.6662 0.597607 22.0691 0.000732422 21.3329 0.000732422C20.5966 0.000732422 19.9996 0.597607 19.9996 1.33401V4.00073C19.9996 4.73714 20.5966 5.33401 21.3329 5.33401Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M37.3326 21.3336C37.3326 22.07 37.9296 22.6669 38.6658 22.6669H41.3326C42.069 22.6669 42.6658 22.07 42.6658 21.3336C42.6658 20.5972 42.069 20.0003 41.3326 20.0003H38.6658C37.9296 20.0003 37.3326 20.5972 37.3326 21.3336Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M1.33328 22.6669H4C4.73641 22.6669 5.33328 22.07 5.33328 21.3336C5.33328 20.5972 4.73625 20.0003 4 20.0003H1.33328C0.596875 20.0003 0 20.5974 0 21.3336C0 22.0699 0.597031 22.6669 1.33328 22.6669Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M11.5118 6.99006C11.8825 7.6224 12.694 7.83693 13.3287 7.47037C13.9634 7.10396 14.1834 6.2938 13.8211 5.65662L12.4878 3.34724C12.2514 2.9313 11.8101 2.67396 11.3317 2.67287C10.8532 2.67177 10.4109 2.92724 10.1726 3.34209C9.93434 3.75693 9.93652 4.26771 10.1786 4.68052L11.5118 6.99006Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M29.3327 7.47802C29.9704 7.84615 30.7858 7.62771 31.1541 6.99006L32.4874 4.68068C32.7294 4.26787 32.7316 3.75709 32.4933 3.34224C32.2551 2.9274 31.8127 2.67193 31.3343 2.67302C30.8558 2.67412 30.4146 2.93146 30.1782 3.3474L28.8449 5.65677C28.4766 6.29443 28.6951 7.10974 29.3327 7.47802Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M36.3446 14.0005C36.5787 14.001 36.8088 13.9394 37.0113 13.8219L39.3207 12.4887C39.7367 12.2523 39.994 11.811 39.9951 11.3326C39.9962 10.8541 39.7407 10.4118 39.3259 10.1735C38.911 9.93522 38.4003 9.93741 37.9874 10.1794L35.6781 11.5127C35.1554 11.8144 34.9007 12.4296 35.0568 13.0124C35.2131 13.5952 35.7412 14.0005 36.3446 14.0005Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M5.65588 28.8455L3.34651 30.1788C2.93057 30.4152 2.67323 30.8564 2.67213 31.3349C2.67104 31.8133 2.92651 32.2556 3.34135 32.4939C3.7562 32.7322 4.26698 32.73 4.67979 32.488L6.98917 31.1547C7.4051 30.9183 7.66245 30.477 7.66354 29.9986C7.66463 29.5202 7.40917 29.0778 6.99432 28.8395C6.57948 28.6013 6.0687 28.6035 5.65588 28.8455Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M35.6767 31.1549L37.986 32.4881C38.3989 32.7302 38.9096 32.7324 39.3245 32.4941C39.7393 32.2558 39.9948 31.8135 39.9937 31.335C39.9926 30.8566 39.7353 30.4153 39.3193 30.1789L37.0099 28.8456C36.3728 28.4835 35.5628 28.7033 35.1962 29.338C34.8298 29.9727 35.0443 30.7841 35.6767 31.1549Z"
+                                                fill="#3A954F"></path>
+                                            <path
+                                                d="M3.34667 12.4885L5.65604 13.8218C6.06885 14.0638 6.57964 14.066 6.99448 13.8277C7.40932 13.5894 7.66479 13.1471 7.6637 12.6687C7.6626 12.1902 7.40526 11.749 6.98932 11.5126L4.67995 10.1793C4.04276 9.8171 3.23276 10.0369 2.8662 10.6716C2.49963 11.3063 2.71432 12.1179 3.34667 12.4885Z"
+                                                fill="#3A954F"></path>
+                                        </svg></span>
+                                </div>
+                                <h4 class="card_title">Hydropower plants</h4>
+                                <p>Since 1985 Reed has pioneered spe <br>
+                                    cialist recruitment, sourcing</p>
+                            </div>
+                        </div>
+                        <div class="services_mini_card col-xl-3 col-lg-4 col-md-6">
+                            <div class="tp-service-4-item text-center">
+                                <div class="tp-service-4-item-icon ">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"
+                                            viewBox="0 0 80 80" fill="none">
+                                            <path
+                                                d="M75.9987 66.6666C77.344 66.6666 78.5893 65.9959 79.3333 64.8733C80.076 63.7519 80.204 62.3439 79.68 61.1066L67.2693 31.7773C66.6467 30.2933 65.2013 29.3333 63.5853 29.3333H47.008L52.8613 21.5879C52.8893 21.5506 52.916 21.5106 52.9413 21.4706C53.4547 20.6159 53.468 19.5866 52.976 18.7199C52.4853 17.8519 51.596 17.3333 50.5987 17.3333H44.2827L47.1827 2.35328C47.3067 1.36261 46.7333 0.442611 45.7893 0.117277C44.876 -0.19739 43.888 0.139944 43.3627 0.942611L27.1386 22.4119C27.1106 22.4493 27.084 22.4893 27.0587 22.5293C26.5453 23.3839 26.532 24.4133 27.024 25.2799C27.5146 26.1479 28.404 26.6666 29.4013 26.6666H35.7173L35.2013 29.3333H16.4146C14.7987 29.3333 13.3533 30.2933 12.7333 31.7733L0.319983 61.1053C-0.20535 62.3439 -0.0760167 63.7519 0.66665 64.8733C1.41065 65.9959 2.65598 66.6666 4.00132 66.6666H29.3333V71.9999H26.6666C24.4613 71.9999 22.6666 73.7946 22.6666 75.9999V77.3333C22.6666 78.8039 23.8626 79.9999 25.3333 79.9999H54.6667C56.1373 79.9999 57.3333 78.8039 57.3333 77.3333V75.9999C57.3333 73.7946 55.5387 71.9999 53.3333 71.9999H50.6667V66.6666H75.9987ZM21.676 63.9999L25.06 49.3333H38.6653V63.9999H21.676ZM41.3333 49.3333H54.9387L58.3227 63.9999H41.332L41.3333 49.3333ZM77.1093 63.4026C76.8587 63.7826 76.4533 63.9999 75.9987 63.9999H61.0613L57.6773 49.3333H71.8027L77.2253 62.1466C77.404 62.5653 77.3627 63.0226 77.1107 63.4013L77.1093 63.4026ZM64.8107 32.8133L70.6733 46.6679H57.0613L53.6773 32.0013H63.5867C64.116 32.0013 64.6067 32.3253 64.8107 32.8133ZM50.9387 32.0013L54.3227 46.6679H41.332V36.8453L44.9933 32.0013H50.9387ZM29.4 24.0013L29.348 23.9106L44.0653 4.43594L41.3573 18.4146C41.2813 18.8053 41.3853 19.2106 41.6373 19.5173C41.8907 19.8226 42.268 20.0013 42.6653 20.0013L50.644 20.0999L35.932 39.5679L38.64 25.5893C38.716 25.1986 38.612 24.7933 38.36 24.4866C38.1067 24.1813 37.7293 24.0026 37.332 24.0026H29.4V24.0013ZM34.2093 43.8839C34.4386 43.9639 34.672 44.0013 34.9026 44.0013C35.5906 44.0013 36.2426 43.6599 36.6373 43.0586L38.6653 40.3746V46.6679H25.6747L29.0587 32.0013H34.6826L32.8147 41.6479C32.6907 42.6386 33.2653 43.5586 34.2093 43.8839ZM15.1893 32.8093C15.3907 32.3253 15.8827 32.0013 16.412 32.0013H26.3213L22.9373 46.6679H9.32665L15.1893 32.8093ZM2.89065 63.4026C2.63998 63.0239 2.59732 62.5666 2.77598 62.1466L8.19865 49.3346H22.324L18.94 64.0013H4.00132C3.54665 64.0013 3.14132 63.7839 2.89065 63.4039V63.4026ZM54.6667 75.9999L54.6693 77.3333H25.3333V75.9999C25.3333 75.2639 25.9306 74.6666 26.6666 74.6666H53.3333C54.0693 74.6666 54.6667 75.2639 54.6667 75.9999ZM48 71.9999H32V66.6666H48V71.9999Z"
+                                                fill="#3A954F"></path>
+                                        </svg></span>
+                                </div>
+                                <h4 class="card_title">Fossil resource</h4>
+                                <p>Since 1985 Reed has pioneered spe <br>
+                                    cialist recruitment, sourcing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--======== type of services section end ========-->
+
+        <!--======== counter area section start ========-->
+
+        <section class="counter_section pt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-11">
+                        <div class="tp-counter-wrap d-flex justify-content-between">
+
+                            <div class="tp-counter-item d-flex align-items-center">
+                                <div class="tp-counter-title">
+                                    <h4 class="tp-counter-item-title">
+                                        <span class="counter" data-target="20">0</span>+
+                                    </h4>
+                                </div>
+                                <div class="tp-counter-item-text">
+                                    <span>Winning awards <br> on solar</span>
+                                </div>
+                            </div>
+
+                            <div class="tp-counter-item d-flex align-items-center">
+                                <div class="tp-counter-title">
+                                    <h4 class="tp-counter-item-title">
+                                        <span class="counter" data-target="35">0</span>k
+                                    </h4>
+                                </div>
+                                <div class="tp-counter-item-text">
+                                    <span>We have completed <br> projects</span>
+                                </div>
+                            </div>
+
+                            <div class="tp-counter-item d-flex align-items-center">
+                                <div class="tp-counter-title">
+                                    <h4 class="tp-counter-item-title">
+                                        <span class="counter" data-target="98">0</span>%
+                                    </h4>
+                                </div>
+                                <div class="tp-counter-item-text">
+                                    <span>Genuine positive <br> feedback</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--======== counter area section end ========-->
+
+        <!--======== our project section start ========-->
+        <section class="our_projects_section">
+            <div class="container">
+                <div class="section_top align-items-center justify-content-between">
+                    <div class="section_heading">
+                        <span class="section_pre_title">Our Projects</span>
+                        <h4 class="section_title">ShivShakti Projects</h4>
+                    </div>
+
+                    <!-- Swiper navigation buttons -->
+                    <div class="swiper-nav">
+                        <div class="swiper-button-prev1 swiper_prev_btn"><i class="bi bi-arrow-left"></i></div>
+                        <div class="swiper-button-next1 swiper_next_btn"><i class="bi bi-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide project-card">
+                            <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=80"
+                                alt="Windmill Project">
+                            <div class="overlay">
+                                <h5 class="title">Windmill Project</h5>
+                                <p class="subtitle">Sustainable Energy Solution</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide project-card">
+                            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+                                alt="Wind Farm">
+                            <div class="overlay">
+                                <h5 class="title">Wind Farm</h5>
+                                <p class="subtitle">Clean Power Source</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide project-card">
+                            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80"
+                                alt="Solar Project">
+                            <div class="overlay">
+                                <h5 class="title">Solar Project</h5>
+                                <p class="subtitle">Harnessing the Sun</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide project-card">
+                            <img src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=800&q=80"
+                                alt="Solar Panels">
+                            <div class="overlay">
+                                <h5 class="title">Solar Farm</h5>
+                                <p class="subtitle">Future of Renewable</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide project-card">
+                            <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=800&q=80"
+                                alt="Hybrid Energy">
+                            <div class="overlay">
+                                <h5 class="title">Hybrid Energy</h5>
+                                <p class="subtitle">Wind + Solar Integration</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide project-card">
+                            <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=800&q=80"
+                                alt="Green Power">
+                            <div class="overlay">
+                                <h5 class="title">Green Power</h5>
+                                <p class="subtitle">Eco-Friendly Solution</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="slider_bottom_text d-flex justify-content-center align-items-center gap-3">
+                        <?xml version="1.0" encoding="UTF-8"?><svg width="28px" height="28px" viewBox="0 0 24 24"
+                            stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ff8544">
+                            <path
+                                d="M8 15C12.8747 15 15 12.949 15 8C15 12.949 17.1104 15 22 15C17.1104 15 15 17.1104 15 22C15 17.1104 12.8747 15 8 15Z"
+                                stroke="#ff8544" stroke-width="1.5" stroke-linejoin="round"></path>
+                            <path
+                                d="M2 6.5C5.13376 6.5 6.5 5.18153 6.5 2C6.5 5.18153 7.85669 6.5 11 6.5C7.85669 6.5 6.5 7.85669 6.5 11C6.5 7.85669 5.13376 6.5 2 6.5Z"
+                                stroke="#ff8544" stroke-width="1.5" stroke-linejoin="round"></path>
+                        </svg>
+                        <h3>We are growing fast! Today pheri has <span>36k+ active residents.</span></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--======== our project section end ========-->
+
+        <!--======== work_safety section start ========-->
+
+        <section class="work_safety fix p-relative ">
+
+            <div class="container">
+                <div class="grid_col_2">
+                    <div class="content_side">
+                        <div>
+                            <span class="section_pre_title">Work and Safety</span>
+                            <h4 class="section_title">Safety at Work</h4>
+                            <p class="mb-30">Safety is our priority, ensuring a secure and healthy workplace for all.
+                            </p>
+                            <ul class="content_list p-0">
+                                <li><span class="check_icon">
+                                        <svg width="16px" height="16px" stroke-width="2" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 13L9 17L19 7" stroke="#fff" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span> Always wear PPE.</li>
+
+                                <li><span class="check_icon">
+                                        <svg width="16px" height="16px" stroke-width="2" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 13L9 17L19 7" stroke="#fff" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span> Be mindful and follow signs.</li>
+
+                                <li><span class="check_icon">
+                                        <svg width="16px" height="16px" stroke-width="2" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 13L9 17L19 7" stroke="#fff" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span> Provide clear instructions.</li>
+
+                                <li><span class="check_icon">
+                                        <svg width="16px" height="16px" stroke-width="2" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 13L9 17L19 7" stroke="#fff" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span> Keep site tidy.</li>
+
+                                <li><span class="check_icon">
+                                        <svg width="16px" height="16px" stroke-width="2" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 13L9 17L19 7" stroke="#fff" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span> Organize and store tools properly.</li>
+
+                                <li><span class="check_icon">
+                                        <svg width="16px" height="16px" stroke-width="2" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 13L9 17L19 7" stroke="#fff" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span> Have an emergency response plan.</li>
+
+                                <li><span class="check_icon">
+                                        <svg width="16px" height="16px" stroke-width="2" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 13L9 17L19 7" stroke="#fff" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span> Set up safeguards.</li>
+
+                                <li><span class="check_icon">
+                                        <svg width="16px" height="16px" stroke-width="2" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 13L9 17L19 7" stroke="#fff" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span> Use the right equipment for the right task.</li>
+                            </ul>
+                            <a href="#" class="btn2 py-4">Know About More</a>
+                        </div>
+                    </div>
+                    <div class="img_side">
+                        <img src="img1.png" alt="Who We Are" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--======== work_safety section end ========-->
+
+        <!--======== Our_client slider section start ========-->
+        <section class="our_client_slider pt-0">
+            <div class="container ">
+                <div class="swiper mySwiperOurClient">
+                    <div class="swiper-wrapper our_client_wrapper">
+
+                        <div class="swiper-slide our_client">
+                            <img src="cm-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide our_client">
+                            <img src="cm-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide our_client">
+                            <img src="cm-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide our_client">
+                            <img src="cm-4.png" alt="">
+                        </div>
+                        <div class="swiper-slide our_client">
+                            <img src="cm-5.png" alt="">
+                        </div>
+                        <div class="swiper-slide our_client">
+                            <img src="cm-6.png" alt="">
+                        </div>
+                        <div class="swiper-slide our_client">
+                            <img src="cm-7.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--======== Our_client slider section end ========-->
+        <!--======== team section start ========-->
+
+        <section class="team_section pt-0 pb-110" data-bg-color="#EBF3ED">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 mb-5">
+                        <div class="section_heading text-center">
+                            <span class="section_pre_title text-center ">MEET WITH OUR TEAM</span>
+                            <h4 class="section_title text-center w-75  mx-auto">Meet with our solar specialist
+                                team members</h4>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row gap-4 justify-content-center">
+
+                    <div class="team_member_card col-xl-3 col-lg-4 col-md-6">
+                        <div class="team_img_container">
+                            <img src="https://images.unsplash.com/photo-1645811852610-9d7e6c8ecb1c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                        <div class="team_member_details">
+                            <div class="social_media">
+                                <a href="#" class="social_icon"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social_icon"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social_icon"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                            <h5 class="team_member_name">Sarah Johnson</h5>
+                            <span class="team_member_role">UI/UX Designer</span>
+                        </div>
+                    </div>
+
+                    <div class="team_member_card  col-xl-3 col-lg-4 col-md-6">
+                        <div class="team_img_container">
+                            <img src="https://images.unsplash.com/photo-1569001853250-aab6ddcf66af?q=80&w=1131&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="David Williams">
+                        </div>
+                        <div class="team_member_details">
+                            <div class="social_media">
+                                <a href="#" class="social_icon"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social_icon"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social_icon"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                            <h5 class="team_member_name">David Williams</h5>
+                            <span class="team_member_role">Frontend Developer</span>
+                        </div>
+                    </div>
+
+                    <div class="team_member_card col-xl-3 col-lg-4 col-md-6">
+                        <div class="team_img_container">
+                            <img src="https://images.unsplash.com/photo-1594743794748-b6b721775767?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                        <div class="team_member_details">
+                            <div class="social_media">
+                                <a href="#" class="social_icon"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social_icon"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social_icon"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                            <h5 class="team_member_name">Emily Davis</h5>
+                            <span class="team_member_role">Marketing Specialist</span>
+                        </div>
+                    </div>
+
+                    <div class="team_member_card col-xl-3 col-lg-4 col-md-6">
+                        <div class="team_img_container">
+                            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=687&auto=format&fit=crop"
+                                alt="">
+                        </div>
+                        <div class="team_member_details">
+                            <div class="social_media">
+                                <a href="#" class="social_icon"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social_icon"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social_icon"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                            <h5 class="team_member_name">James Anderson</h5>
+                            <span class="team_member_role">Backend Developer</span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!--======== team section end ========-->
+
+        <!--======== feedback section start ========-->
+        <section class="feedback_section">
+            <div class="container">
+                <div class="grid_col_2">
+                    <div class="section_heading">
+                        <span class="section_pre_title">CLIENT FEEDBACK</span>
+                        <h4 class="section_title">Our happy customers.</h4>
+
+                        <!-- Swiper navigation buttons -->
+                        <div class="swiper-nav2">
+                            <div class="swiper-button-prev2 swiper_prev_btn"><i class="bi bi-arrow-left"></i></div>
+                            <div class="swiper-button-next2 swiper_next_btn"><i class="bi bi-arrow-right"></i></div>
+                        </div>
+                    </div>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiperFeedback">
+                        <div class="swiper-wrapper feedback_wrapper">
+                            <div class="swiper-slide feedback_card">
+                                <div class="feedback_user_container">
+                                    <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="User 1">
+                                    <div class="user_info">
+                                        <h5 class="user_name">Emily Carter</h5>
+                                        <span class="designation">Designer</span>
+                                    </div>
+                                </div>
+                                <div class="quote">
+                                    <img src="quote-ic.png" alt="">
+                                    <p class="feedback_text">The entire journey was smooth and inspiring. The team
+                                        delivered creative solutions on time, listened to our needs, and supported us
+                                        throughout. Their commitment made this project truly successful and enjoyable
+                                        for everyone involved.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide feedback_card">
+                                <div class="feedback_user_container">
+                                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User 2">
+                                    <div class="user_info">
+                                        <h5 class="user_name">Michael Brown</h5>
+                                        <span class="designation">Project Manager</span>
+                                    </div>
+                                </div>
+                                <div class="quote">
+                                    <img src="quote-ic.png" alt="">
+                                    <p class="feedback_text">This project exceeded expectations from start to finish.
+                                        Communication was clear, deadlines were met, and the final outcome was
+                                        exceptional. I truly appreciate their professionalism and dedication in every
+                                        stage of the process.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide feedback_card">
+                                <div class="feedback_user_container">
+                                    <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="User 3">
+                                    <div class="user_info">
+                                        <h5 class="user_name">Sophia Johnson</h5>
+                                        <span class="designation">Marketing Lead</span>
+                                    </div>
+                                </div>
+                                <div class="quote">
+                                    <img src="quote-ic.png" alt="">
+                                    <p class="feedback_text">Outstanding effort! The team showed remarkable creativity
+                                        and problem-solving skills. They kept us informed, respected feedback, and
+                                        ensured the project matched our expectations perfectly. A reliable partner for
+                                        any future collaboration.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide feedback_card">
+                                <div class="feedback_user_container">
+                                    <img src="https://randomuser.me/api/portraits/men/24.jpg" alt="User 4">
+                                    <div class="user_info">
+                                        <h5 class="user_name">David Wilson</h5>
+                                        <span class="designation">Developer</span>
+                                    </div>
+                                </div>
+                                <div class="quote">
+                                    <img src="quote-ic.png" alt="">
+                                    <p class="feedback_text">Working with this group was a pleasure. Their technical
+                                        expertise, responsiveness, and dedication resulted in excellent outcomes. The
+                                        experience was collaborative, and the final delivery was on time and exceeded
+                                        expectations.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!--======== feedback section end ========-->
+
+        <!--======== Contact us Form section start ========-->
+        <section class="contact_us_form">
+            <div class="container">
+                <div class="grid">
+
+                    <!-- Left Side -->
+                    <div class="left_side">
+                        <div class="contact_details_container">
+                            <div>
+                                <i class="bi bi-telephone"></i>
+                                <span>Call Us</span>
+                                <a href="tel:+1234567890">+123 456 7890</a>
+                            </div>
+                            <div>
+                                <i class="bi bi-envelope"></i>
+                                <span>Email Us</span>
+                                <a href="mailto:info@example.com">info@example.com</a>
+                            </div>
+                            <div>
+                                <i class="bi bi-geo-alt"></i>
+                                <span>Location</span>
+                                <a href="https://maps.google.com">123 Main Street, City, Country</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="right_side">
+                        <span class="section_pre_title">Contact us</span>
+                        <h4 class="section_title">Get in touch with us</h4>
+
+
+
+                        <form id="contactForm" class="mt-5">
+                            <div class="success-message" id="successMessage">
+                                <i class="bi bi-check-circle" style="margin-right: 10px;"></i>
+                                Thank you! Your message has been sent successfully.
+                            </div>
+                            <div class="form_row">
+                                <div class="form_group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                    <small class="error"></small>
+                                </div>
+                                <div class="form_group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <small class="error"></small>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div class="form_group">
+                                    <label for="number">Phone Number</label>
+                                    <input type="tel" id="number" name="number" required>
+                                    <small class="error"></small>
+                                </div>
+                                <div class="form_group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" required>
+                                    <small class="error"></small>
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                                <small class="error"></small>
+                            </div>
+                            <button type="submit" class="btn" id="submitBtn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--======== Contact us Form section end ========-->
+
+        <!--======== footer section start ========-->
+        <footer class="footer pb-0">
+            <div class="container footer pt-0">
+                <div class="grid">
+                    <div class="foot_col">
+
+                        <a class="d-flex align-items-center navbar-brand me-auto mb-4" href="#"><img class="logo"
+                                src="logo.png" alt=""> ShivShakti</a>
+                        <p class="footer_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="social_icon_container">
+                            <a href="#" class="social_icon"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social_icon"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social_icon"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="foot_col">
+                        <h5>Quick Links</h5>
+                        <ul class="footer_links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="about-us.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="projects.html">projects</a></li>
+                            <li><a href="contactus.html">Contact</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="foot_col">
+                        <h5>Contact Us</h5>
+                        <ul class="footer_links">
+                            <li>
+                                <i class="bi bi-envelope"></i>
+                                <a href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-telephone"></i>
+                                <a href="tel:+1234567890">+123 456 7890</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-geo-alt"></i>
+                                <a href="">123 Main Street, City, Country</a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5 copyright_container">
+                <div class="footer_bottom">
+                    <p>&copy; 2023 ShivShakti. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!--======== footer section end ========-->
+
+        <!-- ------- Bootstrap JS Bundle ------- -->
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="main.js"></script>
+
+
+    </body>
+
+</html>

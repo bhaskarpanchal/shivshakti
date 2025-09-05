@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'>
+    <style>
+     .navbar{font-family:Arial; background-color:#4F0D1B;  border:0;  border-radius:0px}
+ 
+.navbar-collapse{padding-left:0; padding-right:0;}
+	.navbar-toggle{margin:7px; color:#fff}
+.navbar{margin:0; z-index:999;}
+ul.navbar-nav > li > a{color:#fff; padding:20px 30px; line-height: 30px; transition:all ease 0.5s; z-index: 99; min-width: 96px; text-align: center; text-transform: uppercase; }
+ 
+ul.navbar-nav > li a:hover, ul.navbar-nav > li.active, 
+ul.nav .open > a:focus, ul.nav li > a:focus	{background-color:#830F27; transition:all ease 0.5s;}
+ 
+/* when clicked */
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #830F27;
+}
+ 
+/* submenu style */
+.navbar .dropdown-menu{z-index:999; min-width:100%; border:0; background-color:#4F0D1B}
+.navbar .dropdown-menu  li a{text-align:left; padding:15px; color:#fff; }
+ 
+/*  mega menu */ 
+.mega-dropdown { position: static !important; }
+.mega-dropdown-menu { z-index:999999;
+  padding: 20px 0px;
+  width: 100%;
+  -webkit-box-shadow: none;
+    border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+  background-color:#7A0E23!important;
+}
+.mega-dropdown-menu ul{margin:0; padding:0}
+.mega-dropdown-menu  li {color:#fff; list-style: outside none}
+ 
+.mega-dropdown-menu  li  a{padding:5px!important; display:block!important;  }
+.mega-dropdown-menu  li  a:hover{background-color:#4F0D1B!important}
+ 
+a.title-submenu{font-weight:bold; color:rgba(0,0,0,.5); }
+ 
+/* search form  */ 
+.searchform{padding:10px 15px; float:right} 
+.searchform .btn{ color:rgba(200,200,200,.5);border: 1px solid transparent; background-color:#830F27; }
+.searchform .form-control{
+	border:0; color:#fff;
+	background-color:rgba(200,200,200,.1);
+	width:120px!important;
+   -webkit-transition: all .5s ease;
+   -moz-transition: all .5s ease;
+   transition: all .5s ease;
+}
+.searchform .form-control:hover, .searchform .form-control:focus {
+   width: 170px!important;
+}
+    </style>
+</head>
+<body>
+   <nav class="navbar" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+<span class="toggle-menu ">MENU</span>
+      </button>
+    <!--  <a class="navbar-brand" href="#">Home</a> -->
+    </div>
+ 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home page</a></li>
+		<li  class="dropdown mega-dropdown"><a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Products <span class="caret"></span> </a>
+ 
+<!--  mega menu -->		
+<ul class="dropdown-menu mega-dropdown-menu row">
+	<li class="col-sm-3">
+    <a class="title-submenu" href="#">For womans <span class="caret"></span> </a> 
+		<ul>
+			<li> <a href="#">Jackets</a></li>
+			<li> <a href="#">Shoes</a></li>
+			<li> <a href="#">Lorem ipsum</a></li>
+			<li> <a href="#">Something</a></li>
+			<li> <a href="#">Good shirts</a></li>
+		</ul>
+	</li>
+	<li class="col-sm-3"><a href="#">For men<span class="caret"></span></a> 
+		<ul>
+			<li> <a href="#">Trousers</a></li>
+			<li> <a href="#">Jackets</a></li>
+			<li> <a href="#">Shirts </a></li>
+			<li> <a href="#">Kardiagni</a></li>
+			<li> <a href="#">Product name</a></li>
+		</ul>
+	</li>
+	<li class="col-sm-3"><a href="#">For children<span class="caret"></span> </a> 
+		<ul>
+			<li> <a href="#">Product name</a></li>
+			<li> <a href="#">Product name2</a></li>
+			<li> <a href="#">Product name3</a></li>
+			<li> <a href="#">Product name4</a></li>
+			<li> <a href="#">Product name5</a></li>							
+		</ul>
+			</li>
+	<li class="col-sm-3"><a href="#">For home<span class="caret"></span></a> 
+		<ul>
+			<li> <a href="#">Blankets</a></li>
+			<li> <a href="#">Pillows</a></li>
+		</ul>
+	</li>
+	<li class="col-sm-3"><a href="#">Uniforms</a> </li>
+</ul>
+<!--  mega menu // -->
+	</li>
+	<li><a href="#">Detail view</a></li>
+	<li><a href="#">Certificate</a></li>
+	<li class="dropdown"><a href="html-about.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">About us</a>
+		<ul class="dropdown-menu">
+			<li><a href="#">Our History</a></li>
+			<li><a href="#">Vacancies in company</a></li>
+		</ul>
+	</li>
+		<li><a href="#"> Contacts </a></li>
+      </ul>
+	  
+	<form action="#" method="get" class="searchform navbar-form" role="search">
+	<input type="hidden" value="search" name="view">
+	<div class="input-group">
+	<input type="text"  name="searchword" required class="form-control" placeholder="Search" name="q">
+		<div class="input-group-btn">
+	<button class="btn" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+		</div>
+	</div>
+    </form>
+		
+     </div><!-- /.navbar-collapse -->
+</nav>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='https://cameronspear.com/downloads/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js'></script>
+<script>
+  jQuery(document).on('click', '.mega-dropdown', function(e) {
+	e.stopPropagation()
+});
+</script>
+</body>
+</html>
