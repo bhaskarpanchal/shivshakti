@@ -1582,6 +1582,7 @@ footer h5 {
   text-align: center;
   position: relative;
   background-size: cover;
+  background-position: 0 15%;
 
   background-repeat: no-repeat;
 }
