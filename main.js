@@ -15,6 +15,28 @@ const initSwipers = () => {
       nextEl: ".swiper-button-next1",
       prevEl: ".swiper-button-prev1",
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: 2.5,
+        spaceBetween: 15,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1200: {
+        slidesPerView: 3.5,
+        spaceBetween: 20,
+      },
+    },
   });
 
   // Feedback Swiper
@@ -26,6 +48,28 @@ const initSwipers = () => {
     navigation: {
       nextEl: ".swiper-button-next2",
       prevEl: ".swiper-button-prev2",
+    },autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      576: {
+        slidesPerView: 1.5,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
     },
   });
 
@@ -36,9 +80,27 @@ const initSwipers = () => {
     loop: true,
     speed: 2000,
     autoplay: {
-      delay: 1000,
+      delay: 0,
       disableOnInteraction: false,
       pauseOnMouseEnter: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 3,
+      },
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
     },
   });
 };
