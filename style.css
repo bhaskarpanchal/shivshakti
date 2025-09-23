@@ -480,6 +480,7 @@ header .container {
   color: white;
   text-align: start;
   width: 100%;
+  position: relative;
 }
 .hero-video {
   position: absolute;
@@ -487,7 +488,7 @@ header .container {
   left: 50%;
   width: 102%;
   height: 100%;
-  object-fit: cover; /* makes video cover the whole section */
+  object-fit: cover; 
   transform: translate(-50%, -50%);
   z-index: -1;
   scale: 1.01;
@@ -608,7 +609,7 @@ header .container {
   margin-left: 0 !important;
   list-style-position: inside;
   font-weight: 600;
-  margin-bottom: 0.3rem;
+  margin-bottom: 1rem;
 }
 
 .content_list li span {
@@ -621,7 +622,7 @@ header .container {
   align-items: center;
   justify-content: center;
   margin-top: 0.3rem;
-  margin-right: 0.5rem;
+  margin-right: 0.8rem;
 }
 /* ============== Who_we_are_section Section end ============== */
 
@@ -2089,9 +2090,6 @@ footer h5 {
     grid-template-columns: 1fr ;
     gap: 3rem;
   } 
-.footer{
-  padding-bottom: 4rem !important;
-}
 
 .footer_description{
   width: 100%;
@@ -2114,6 +2112,7 @@ footer h5 {
 /* Mobile phones (<480px) */
 @media (width < 480px) {
 
+
   section,
   main,
   footer{
@@ -2131,7 +2130,7 @@ footer h5 {
   }
 
   .section_title {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .contact_us_form .right_side
 {
@@ -2146,4 +2145,31 @@ header .container{
 .navbar-brand{
   font-size: 2.6rem;
 }
+.tp-service-4-item-icon svg{
+  max-width: 80%;
+  margin-inline: auto;
 }
+.team_member, .team-member-card-container{
+  gap: 4rem !important;
+}
+
+.team_member.about_us{
+  padding-bottom: 6rem;{
+
+}
+.type_of_services_section{
+  padding-bottom: 2rem !important;
+}
+.team_section {
+  padding-bottom: 0 !important;
+}
+
+footer{
+  padding-bottom: 0 !important;
+}
+footer .container{
+  padding-bottom: 4rem;
+}
+
+}
+
