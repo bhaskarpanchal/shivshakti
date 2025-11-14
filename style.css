@@ -592,7 +592,7 @@ header .container {
 /* ============== Who_we_are_section Section start ============== */
 .Who_we_are_section .grid_col_2 {
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 6rem;
 }
 
@@ -602,7 +602,7 @@ header .container {
   font-weight: 400;
 }
 .content_list {
-  margin-bottom: 56px;
+  margin-bottom: 40px;
   margin-top: 20px;
 }
 .content_list li {
@@ -1655,16 +1655,26 @@ footer h5 {
 
 .page_top_heading {
   height: 60vh;
-  background: url("img2.jpg");
+  background: url("bg2.avif");
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
   background-size: cover;
-  background-position: 0 15%;
+  background-position: center;
 
   background-repeat: no-repeat;
+}
+
+.services-pg.page_top_heading {
+  background: radial-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.716)), url("bg4.avif");
+  background-position: center center;
+}
+
+.contact-us-page.page_top_heading {
+  background: url("bg6.avif");
+  background-position: center ;
 }
 
 .page_top_heading_container h1 {
@@ -2287,4 +2297,10 @@ footer h5 {
 }
 .address{
   display: flex !important;
+}
+.img-fluid{
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+
 }
