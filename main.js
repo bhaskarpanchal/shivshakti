@@ -391,3 +391,52 @@ document.addEventListener("DOMContentLoaded", () => {
   initHeaderScroll();
   initSidebar();
 });
+
+
+
+// ===================== Image Gallery JS =====================
+   const galleryImages = document.querySelectorAll(".gallery_img");
+const popupOverlay = document.getElementById("imgPopupOverlay");
+const popupImg = document.getElementById("popupImg");
+const closePopup = document.getElementById("closePopup");
+
+const nextBtn = document.getElementById("nextImg");
+const prevBtn = document.getElementById("prevImg");
+
+let currentIndex = 0;
+
+// Open popup
+galleryImages.forEach((img, index) => {
+    img.addEventListener("click", () => {
+        currentIndex = index;
+        popupImg.src = img.src;
+        popupOverlay.style.display = "flex";
+    });
+});
+
+// Close popup
+closePopup.addEventListener("click", () => {
+    popupOverlay.style.display = "none";
+});
+
+// Close on background click
+popupOverlay.addEventListener("click", (e) => {
+    if (e.target === popupOverlay) {
+        popupOverlay.style.display = "none";
+    }
+});
+
+// Next image
+nextBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex + 1) % galleryImages.length;
+    popupImg.src = galleryImages[currentIndex].src;
+});
+
+// Previous image
+prevBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+    popupImg.src = galleryImages[currentIndex].src;
+});
+

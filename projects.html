@@ -173,85 +173,44 @@
         </section>
         <!--======== Our_client slider section end ========-->
 
+<!--======== Image Gallery Section Start ========-->
+<section class="image_gallery">
+    <div class="container">
+                <div class="section_heading text-center">
 
-        <!--======== Contact us Form section start ========-->
-        <section class="contact_us_form">
-            <div class="container">
-                <div class="grid">
-
-                    <!-- Left Side -->
-                    <div class="left_side">
-                        <div class="contact_details_container">
-                            <div>
-                                <i class="bi bi-telephone"></i>
-                                <span>Call Us</span>
-                                <a href="tel:9399153190">9399153190,</a>
-                                <a class="number-2" href="tel:6265465007">
-                                    6265465007</a>
-                            </div>
-                            <div>
-                                <i class="bi bi-envelope"></i>
-                                <span>Email Us</span>
-                                <a href="mailto:Info@shivshaktienterprise.org.in">Info@shivshaktienterprise.org.in</a>
-                            </div>
-                            <div>
-                                <i class="bi bi-geo-alt"></i>
-                                <span>Location</span>
-                                <a href="https://maps.google.com">Katju Nagar Vidyut Colony Jaora Ratlam (M. P.)
-                                    457226</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right Side -->
-                    <div class="right_side">
-                        <span class="section_pre_title">Contact us</span>
-                        <h4 class="section_title">Get in touch with us</h4>
-
-
-
-                        <form id="contactForm" class="mt-5">
-                            <div class="success-message" id="successMessage">
-                                <i class="bi bi-check-circle" style="margin-right: 10px;"></i>
-                                Thank you! Your message has been sent successfully.
-                            </div>
-                            <div class="form_row">
-                                <div class="form_group">
-                                    <label for="name">Full Name</label>
-                                    <input type="text" id="name" name="name" required>
-                                    <small class="error"></small>
-                                </div>
-                                <div class="form_group">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" required>
-                                    <small class="error"></small>
-                                </div>
-                            </div>
-                            <div class="form_row">
-                                <div class="form_group">
-                                    <label for="number">Phone Number</label>
-                                    <input type="tel" id="number" name="number" required>
-                                    <small class="error"></small>
-                                </div>
-                                <div class="form_group">
-                                    <label for="subject">Subject</label>
-                                    <input type="text" id="subject" name="subject" required>
-                                    <small class="error"></small>
-                                </div>
-                            </div>
-                            <div class="form_group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="4" required></textarea>
-                                <small class="error"></small>
-                            </div>
-                            <button type="submit" class="btn" id="submitBtn">Send Message</button>
-                        </form>
-                    </div>
+                    <h4 class="section_title text-center w-75  mx-auto " style="font-size: 5rem;">Our Projects</h4>
+                    <span>A quick look at our on-ground project installations across India.</span>
                 </div>
-            </div>
-        </section>
-        <!--======== Contact us Form section end ========-->
-        <!--======== footer section start ========-->
+        <div class="gallery_grid" id="galleryGrid">
+
+            <img src="s-img1.avif" class="gallery_img" alt="">
+            <img src="s-img2.avif" class="gallery_img" alt="">
+            <img src="s-img3.avif" class="gallery_img" alt="">
+            <img src="s-img4.avif" class="gallery_img" alt="">
+            <img src="s-img5.avif" class="gallery_img" alt="">
+            <img src="s-img6.avif" class="gallery_img" alt="">
+            <img src="s-img7.avif" class="gallery_img" alt="">
+            <img src="bg3.avif" class="gallery_img" alt="">
+
+        </div>
+    </div>
+</section>
+
+<!-- Image Popup Overlay -->
+<div id="imgPopupOverlay" class="img_popup_overlay">
+    <span id="closePopup" class="close_popup"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M18.36 19.78L12 13.41l-6.36 6.37l-1.42-1.42L10.59 12L4.22 5.64l1.42-1.42L12 10.59l6.36-6.36l1.41 1.41L13.41 12l6.36 6.36z"/></svg></span>
+
+    <button class="nav_btn prev_btn" id="prevImg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20"><path fill="#ffffff" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z"/></svg></button>
+    <img id="popupImg" class="popup_image" src="">
+    <button class="nav_btn next_btn" id="nextImg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20"><path fill="#ffffff" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z"/></svg></button>
+</div>
+<!--======== Image Gallery Section End ========-->
+
+      
+
+
+
+             <!--======== footer section start ========-->
         <footer class="footer pb-0">
             <div class="container footer pt-0">
                 <div class="grid">
@@ -262,22 +221,7 @@
                         <p class="footer_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="social_icon_container">
-                            <a href="#" class="social_icon"><svg xmlns="http://www.w3.org/2000/svg" width="200"
-                                    height="200" viewBox="0 0 256 256">
-                                    <g fill="none">
-
-                                        <path fill="#4285F4"
-                                            d="M41.636 203.039h31.818v-77.273L28 91.676v97.727c0 7.545 6.114 13.636 13.636 13.636" />
-                                        <path fill="#34A853"
-                                            d="M182.545 203.039h31.819c7.545 0 13.636-6.114 13.636-13.636V91.675l-45.455 34.091" />
-                                        <path fill="#FBBC04"
-                                            d="M182.545 66.675v59.091L228 91.676V73.492c0-16.863-19.25-26.477-32.727-16.363" />
-                                        <path fill="#EA4335"
-                                            d="M73.455 125.766v-59.09L128 107.583l54.545-40.909v59.091L128 166.675" />
-                                        <path fill="#C5221F"
-                                            d="M28 73.493v18.182l45.454 34.091v-59.09L60.727 57.13C47.227 47.016 28 56.63 28 73.493" />
-                                    </g>
-                                </svg></a>
+                            <a href="#" class="social_icon"><i class="bi bi-facebook"></i></a>
                             <a href="#" class="social_icon"><i class="bi bi-instagram"></i></a>
                             <a href="#" class="social_icon"><i class="bi bi-linkedin"></i></a>
                         </div>
@@ -285,17 +229,17 @@
                     <div class="foot_col">
                         <h5>Quick Links</h5>
                         <ul class="footer_links">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="about-us.html">About</a></li>
                             <li><a href="services.html">Services</a></li>
-                            <li><a href="#">projects</a></li>
+                            <li><a href="projects.html">projects</a></li>
                             <li><a href="contactus.html">Contact</a></li>
                         </ul>
 
                     </div>
                     <div class="foot_col">
                         <h5>Contact Us</h5>
-                        <ul class="footer_links">
+                        <ul class="footer_links contact_footer_links">
                             <li>
                                 <i class="bi bi-envelope"></i>
                                 <a href="mailto:Info@shivshaktienterprise.org.in">Info@shivshaktienterprise.org.in</a>
