@@ -2233,6 +2233,16 @@ footer h5 {
     width: 100% !important;
     text-align: start;
   }
+
+  .contact-us-page.page_top_heading {
+    background-position: 38%;
+}
+.services-pg.page_top_heading
+{
+    background-position: 24% center;
+}
+
+
 }
 /* Mobile phones (<480px) */
 @media (width < 480px) {
