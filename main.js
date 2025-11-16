@@ -404,9 +404,40 @@ const nextBtn = document.getElementById("nextImg");
 const prevBtn = document.getElementById("prevImg");
 
 let currentIndex = 0;
+const initialVisibleImages = 8;
+const imagesToShowPerClick = 4;
+
+const viewMoreBtn = document.getElementById("viewMoreBtn");
+const allGalleryImages = document.querySelectorAll(".gallery_grid .gallery_img");
+
+// Initially hide images beyond the first 'initialVisibleImages'
+const hideInitialImages = () => {
+    allGalleryImages.forEach((img, index) => {
+        if (index >= initialVisibleImages) {
+            img.classList.add("hidden-gallery-item");
+        }
+    });
+    if (allGalleryImages.length <= initialVisibleImages) {
+        viewMoreBtn.style.display = "none";
+    }
+};
+
+// Show more images when "View More" button is clicked
+const showMoreImages = () => {
+    let hiddenImages = document.querySelectorAll(".gallery_grid .gallery_img.hidden-gallery-item");
+    for (let i = 0; i < imagesToShowPerClick; i++) {
+        if (hiddenImages[i]) {
+            hiddenImages[i].classList.remove("hidden-gallery-item");
+        }
+    }
+    hiddenImages = document.querySelectorAll(".gallery_grid .gallery_img.hidden-gallery-item");
+    if (hiddenImages.length === 0) {
+        viewMoreBtn.style.display = "none";
+    }
+};
 
 // Open popup
-galleryImages.forEach((img, index) => {
+allGalleryImages.forEach((img, index) => {
     img.addEventListener("click", () => {
         currentIndex = index;
         popupImg.src = img.src;
@@ -429,14 +460,21 @@ popupOverlay.addEventListener("click", (e) => {
 // Next image
 nextBtn.addEventListener("click", (e) => {
     e.stopPropagation();
-    currentIndex = (currentIndex + 1) % galleryImages.length;
-    popupImg.src = galleryImages[currentIndex].src;
+    currentIndex = (currentIndex + 1) % allGalleryImages.length;
+    popupImg.src = allGalleryImages[currentIndex].src;
 });
 
 // Previous image
 prevBtn.addEventListener("click", (e) => {
     e.stopPropagation();
-    currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
-    popupImg.src = galleryImages[currentIndex].src;
+    currentIndex = (currentIndex - 1 + allGalleryImages.length) % allGalleryImages.length;
+    popupImg.src = allGalleryImages[currentIndex].src;
 });
 
+// Event listener for "View More" button
+if (viewMoreBtn) {
+    viewMoreBtn.addEventListener("click", showMoreImages);
+}
+
+// Initialize gallery visibility
+hideInitialImages();
