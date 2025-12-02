@@ -941,7 +941,7 @@ header .container {
   font-size: 1.6rem;
   font-weight: 800;
   color: var(--text-color);
-  margin-bottom: 0rem;
+  margin-bottom: 5px;
   text-transform: uppercase;
   line-height: 1;
 }
@@ -2495,3 +2495,116 @@ footer h5 {
 
 /* ---------------- gallery end -------------- */
 
+.user_info span{
+  display: inline-block;
+  line-height: 1.4;
+  amrgin-top: 0.4rem;
+}
+
+/* ------------loader ------------ */
+/* Loader Background */
+#pageLoader {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: transform 0.6s ease, opacity 0.6s ease, visibility 0.6s ease;
+}
+
+/* Zoom Out Effect */
+#pageLoader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0); /* shrinks to nothing */
+}
+
+/* Loader Design (Uiverse Code) */
+.three-body {
+  --uib-size: 35px;
+  --uib-speed: 0.8s;
+  --uib-color: #5D3FD3;
+  position: relative;
+  display: inline-block;
+  height: var(--uib-size);
+  width: var(--uib-size);
+  animation: spin78236 calc(var(--uib-speed) * 2.5) infinite linear;
+}
+
+.three-body__dot {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+}
+
+.three-body__dot:after {
+  content: '';
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: var(--uib-color);
+  border-radius: 50%;
+  will-change: transform, opacity;
+}
+
+.three-body__dot:nth-child(1) {
+  bottom: 5%;
+  left: 0;
+  transform: rotate(60deg);
+  transform-origin: 50% 85%;
+}
+
+.three-body__dot:nth-child(1)::after {
+  bottom: 0;
+  left: 0;
+  animation: wobble1 var(--uib-speed) infinite ease-in-out;
+  animation-delay: calc(var(--uib-speed) * -0.3);
+}
+
+.three-body__dot:nth-child(2) {
+  bottom: 5%;
+  right: 0;
+  transform: rotate(-60deg);
+  transform-origin: 50% 85%;
+}
+
+.three-body__dot:nth-child(2)::after {
+  bottom: 0;
+  left: 0;
+  animation: wobble1 var(--uib-speed) infinite
+    calc(var(--uib-speed) * -0.15) ease-in-out;
+}
+
+.three-body__dot:nth-child(3) {
+  bottom: -5%;
+  left: 0;
+  transform: translateX(116.666%);
+}
+
+.three-body__dot:nth-child(3)::after {
+  top: 0;
+  left: 0;
+  animation: wobble2 var(--uib-speed) infinite ease-in-out;
+}
+
+/* Animations */
+@keyframes spin78236 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes wobble1 {
+  0%, 100% { transform: translateY(0%) scale(1); opacity: 1; }
+  50% { transform: translateY(-66%) scale(0.65); opacity: 0.8; }
+}
+
+@keyframes wobble2 {
+  0%, 100% { transform: translateY(0%) scale(1); opacity: 1; }
+  50% { transform: translateY(66%) scale(0.65); opacity: 0.8; }
+}

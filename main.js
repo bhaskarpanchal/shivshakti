@@ -6,11 +6,11 @@ const initSwipers = () => {
     spaceBetween: 20,
     loop: true,
     speed: 800,
-    autoplay: {
-      delay: 2300,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
-    },
+    // autoplay: {
+    //   delay: 2300,
+    //   disableOnInteraction: false,
+    //   pauseOnMouseEnter: true,
+    // },
     navigation: {
       nextEl: ".swiper-button-next1",
       prevEl: ".swiper-button-prev1",
@@ -48,11 +48,12 @@ const initSwipers = () => {
     navigation: {
       nextEl: ".swiper-button-next2",
       prevEl: ".swiper-button-prev2",
-    },autoplay: {
-      delay: 1500,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
     },
+    // autoplay: {
+    //   delay: 1500,
+    //   disableOnInteraction: false,
+    //   pauseOnMouseEnter: true,
+    // },
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -79,11 +80,11 @@ const initSwipers = () => {
     spaceBetween: 10,
     loop: true,
     speed: 2000,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
-    },
+    // autoplay: {
+    //   delay: 0,
+    //   disableOnInteraction: false,
+    //   pauseOnMouseEnter: true,
+    // },
     breakpoints: {
       320: {
         slidesPerView: 2,
